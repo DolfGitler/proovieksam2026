@@ -1,0 +1,822 @@
+/* GLOBAL STYLES */
+body {
+    background-color: #F0F0F0; /* Light Gray Background */
+    color: #1A1A1A; /* Dark Navy Text */
+    font-family: 'Merriweather', serif;
+}
+
+/* NEW HEADER STYLES */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F0F0F0; /* Light Background */
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    width: 1680px;
+    max-width: 90%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-text {
+    font-family: 'Graduate', serif;
+    font-size: 16px;
+    color: #0077FF; /* Electric Blue Logo Text */
+}
+
+.main-nav {
+    display: flex;
+    gap: 54px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Merriweather', serif;
+}
+
+.main-nav a.active {
+    border-bottom: 2px solid #0077FF; /* Active link in Electric Blue */
+}
+
+/* Decorative Background Shapes - Updated Color */
+.desktop-3-child {
+    position: absolute;
+    top: 3953.72px;
+    left: calc(50% - 1148px);
+    background-color: rgba(0, 119, 255, 0.3); /* Semi-transparent Electric Blue */
+    width: 125px;
+    height: 2423.6px;
+    transform: rotate(-62.4deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+.site-background-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    object-fit: contain;
+}
+
+/* Hero Section Text - Translated and Colored */
+.Falcon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 112%;
+}
+
+.since2004 {
+    position: absolute;
+    top: 96px;
+    left: 0px;
+    font-size: 48px;
+    line-height: 112%;
+}
+
+.falcon-parent {
+    position: absolute;
+    top: 502px;
+    left: 120px;
+    width: 634px;
+    height: 150px;
+    text-align: center;
+    font-size: 64px;
+    color: #0077FF; /* Electric Blue */
+}
+
+/* History Section Heading - Translated and Colored */
+.ajalugu {
+    position: absolute;
+    top: 1239px;
+    left: 120px;
+    font-size: 48px;
+    display: inline-block;
+    width: 253px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Changed from Ajalugu (History) to TEAM ORIGINS */
+}
+
+/* Decorative Shapes 2, 3, 4 - Updated Color */
+.desktop-3-inner {
+    position: absolute;
+    top: 2114.91px;
+    left: calc(50% - 1028.52px);
+    background-color: rgba(0, 119, 255, 0.3); /* Semi-transparent Electric Blue */
+    width: 125px;
+    height: 2169.8px;
+    transform: rotate(-71deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+.rectangle-div {
+    position: absolute;
+    top: 3912.76px;
+    left: calc(50% - 991.45px);
+    background-color: rgba(0, 119, 255, 0.3); /* Semi-transparent Electric Blue */
+    width: 125px;
+    height: 2316.4px;
+    transform: rotate(-117deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+.desktop-3-child4 {
+    position: absolute;
+    top: 1067px;
+    left: calc(50% + 978.2px);
+    background-color: rgba(0, 119, 255, 0.3); /* Semi-transparent Electric Blue */
+    width: 125px;
+    height: 2156.7px;
+    transform: rotate(68deg);
+    transform-origin: 0 0;
+    z-index: -1;
+}
+
+
+/* Footer Section - Updated Color and Content */
+.desktop-3-child1 {
+    position: absolute;
+    top: 5061px;
+    left: 0px;
+    background-color: #1A1A1A; /* Dark Navy Footer */
+    width: 1920px;
+    height: 339px;
+}
+
+.telefoni-abiliin { /* Phone Support */
+    position: absolute;
+    top: 5101px;
+    left: 247px;
+    font-size: 28px;
+    line-height: 127%;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 546px;
+}
+
+.copyright-text-size { 
+    font-size: 20px;
+}
+
+.site-copyright-info { 
+    position: absolute;
+    top: 5335px;
+    left: 711.11px;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 497.8px;
+}
+
+.line-div {
+    position: absolute;
+    top: 5251px;
+    left: 246px;
+    border-top: 2px solid #0077FF; /* Electric Blue line */
+    box-sizing: border-box;
+    width: 548px;
+    height: 2px;
+}
+
+.desktop-3-child2 {
+    position: absolute;
+    top: 5251px;
+    left: 1126px;
+    border-top: 2px solid #0077FF; /* Electric Blue line */
+    box-sizing: border-box;
+    width: 548px;
+    height: 2px;
+}
+
+.e-r-900-1700 { /* Mon-Fri 9:00-17:00 */
+    position: absolute;
+    top: 5145px;
+    left: 247px;
+    font-size: 20px;
+    line-height: 127%;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 546px;
+}
+
+.div { /* +372 5555 6666 */
+    position: absolute;
+    top: 5186px;
+    left: 247px;
+    font-size: 28px;
+    line-height: 127%;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 546px;
+}
+
+.jlgi-meid { /* Follow Us */
+    position: absolute;
+    top: 5101px;
+    left: 1210px;
+    font-size: 28px;
+    line-height: 127%;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+}
+
+.sotsiaal-meedia { /* Social Media */
+    position: absolute;
+    top: 5145px;
+    left: 1210px;
+    font-size: 20px;
+    line-height: 127%;
+    color: #F0F0F0;
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+}
+
+/* Social Icons (No color change needed as they are images) */
+.frame-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.frame-icon1 {
+    position: absolute;
+    top: 0px;
+    left: 52.22px;
+    width: 40px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.frame-icon2 {
+    position: absolute;
+    top: 0px;
+    left: 104.44px;
+    width: 40px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.frame-parent {
+    position: absolute;
+    top: 5186px;
+    left: 1340.33px;
+    width: 144.4px;
+    height: 36px;
+}
+
+/* Notable Figures Section */
+.notable-figures-image-1 {
+    position: absolute;
+    top: 2370px;
+    left: 120px;
+    border-radius: 0px 10px 10px 0px;
+    width: 533px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.notable-figures-image-2 { 
+    position: absolute;
+    top: 2854px;
+    left: 120px;
+    border-radius: 0px 10px 10px 0px;
+    width: 533px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.historical-figure-font { 
+    font-family: Merriweather;
+}
+
+.historical-figure-name-1 { 
+    margin: 0;
+}
+
+.historical-figure-details-container { 
+    position: absolute;
+    top: 2475px;
+    left: 693px;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    line-height: 176.57%;
+    display: inline-block;
+    width: 986px;
+    height: 426px;
+}
+
+.notable-figures-heading { 
+    position: absolute;
+    top: 2370px;
+    left: 693px;
+    font-size: 48px;
+    letter-spacing: 0.08em;
+    line-height: 176.57%;
+    display: inline-block;
+    width: 534px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Changed from Notable Figures to TEAM LEGENDS */
+}
+
+.loe-rohkem { /* Read More */
+    
+}
+
+.loe-rohkem-wrapper { /* Read More Wrapper */
+    position: absolute;
+    top: 2941px;
+    left: 693px;
+    border-radius: 10px;
+    background-color: #0077FF; /* Electric Blue Button */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #F0F0F0; /* Light Text */
+    border: 1px solid #1A1A1A;
+    cursor: pointer;
+}
+
+/* Event/Excursion Boxes - Translated and Colored */
+.desktop-3-child3 {
+    position: absolute;
+    top: 3420px;
+    left: 263px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #00C4CC; /* Bright Teal Form Background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 586px;
+    height: 404px;
+}
+
+.excursion-image-1 { 
+    position: absolute;
+    top: 3420px;
+    left: 263px;
+    border-radius: 10px;
+    width: 311px;
+    height: 404px;
+    object-fit: cover;
+}
+
+.ekskursioonid { /* Excursions/Team Tryouts */
+    position: absolute;
+    top: 3450px;
+    left: 574px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 275px;
+}
+
+.broneeri { /* Book Now */
+    position: relative;
+    letter-spacing: 0.01em;
+}
+
+.broneeri-wrapper { /* Book Now Wrapper */
+    position: absolute;
+    top: 3749px;
+    left: 657px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #F0F0F0; /* Light button background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 109px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.discover-peetri-area-container { /* Team Tryouts Description */
+    position: absolute;
+    top: 3496px;
+    left: 594px;
+    display: inline-block;
+    width: 235px;
+    height: 250px;
+}
+
+/* Family Day Event Box - Translated and Colored */
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #00C4CC; /* Bright Teal Form Background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 586px;
+    height: 404px;
+}
+
+.familyday-image-1 { 
+    position: absolute;
+    top: 0px;
+    left: 275px;
+    border-radius: 10px;
+    width: 311px;
+    height: 404px;
+    object-fit: cover;
+}
+
+.family-day-event-title { /* Fan Meetup Event Title */
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: inline-block;
+    width: 275px;
+}
+
+.broneeri-container { /* Book Now Container */
+    position: absolute;
+    top: 329px;
+    left: 83px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #F0F0F0; /* Light button background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 109px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.kutsume-teid-veetma { /* Fan Meetup Description */
+    position: absolute;
+    top: 76px;
+    left: 20px;
+    font-size: 16px;
+    text-align: right;
+    display: inline-block;
+    width: 235px;
+    height: 250px;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 3420px;
+    left: 1071px;
+    width: 586px;
+    height: 404px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Schedule/Calendar Section - Translated and Colored */
+.vaata-meie-ajagraafik { /* Check Our Schedule */
+    position: absolute;
+    top: 3964px;
+    left: 393px;
+    font-size: 48px;
+    font-family: Inter;
+    display: inline-block;
+    width: 547px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desktop-3-child5 {
+    position: absolute;
+    top: 4072px;
+    left: 407px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #0077FF; /* Electric Blue Schedule Background */
+    width: 1106px;
+    height: 104px;
+}
+
+.juuni-2020-04 { /* June 2020-04 / Date */
+    position: absolute;
+    top: 4114px;
+    left: 758px;
+    color: #F0F0F0;
+    display: inline-block;
+    width: 222px;
+}
+
+.keyboard-arrow-right-24dp-5f63-icon {
+    position: absolute;
+    top: 4112px;
+    left: 1162.86px;
+    width: 23.4px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.icons8-facebook-1 {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 19.5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.icons8-youtube-1 {
+    position: absolute;
+    top: 0px;
+    left: 35.11px;
+    width: 21.5px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.icons8-facebook-1-parent {
+    position: absolute;
+    top: 4113px;
+    left: 1425.22px;
+    width: 56.6px;
+    height: 22px;
+}
+
+.giidiga-ekskursioon { /* Guided Excursion / Match Schedule */
+    position: absolute;
+    top: 4114px;
+    left: 439px;
+    color: #F0F0F0;
+    display: inline-block;
+    width: 214px;
+}
+
+.desktop-3-child6 {
+    position: absolute;
+    top: 4218px;
+    left: 407px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #0077FF; /* Electric Blue Schedule Background */
+    width: 1106px;
+    height: 104px;
+}
+
+.juuni-2020-041 { /* Date */
+    position: absolute;
+    top: 4260px;
+    left: 758px;
+    color: #F0F0F0;
+    display: inline-block;
+    width: 222px;
+}
+
+.keyboard-arrow-right-24dp-5f63-icon1 {
+    position: absolute;
+    top: 4258px;
+    left: 1162.86px;
+    width: 23.4px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.icons8-facebook-1-group {
+    position: absolute;
+    top: 4259px;
+    left: 1425.22px;
+    width: 56.6px;
+    height: 22px;
+}
+
+.familyday-event-name { /* Family Day Event Name / Match Name */
+    position: absolute;
+    top: 4260px;
+    left: 439px;
+    color: #F0F0F0;
+    display: inline-block;
+    width: 215px;
+}
+
+.site-title-element { 
+    position: absolute;
+    top: 95.22px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.icons8-windmill-100-2-1 {
+    position: absolute;
+    top: 0px;
+    left: 47.31px;
+    width: 90.4px;
+    height: 90.4px;
+    object-fit: cover;
+}
+
+.site-footer-logo-container { 
+    position: absolute;
+    top: 5191px;
+    left: 867px;
+    width: 186px;
+    height: 122px;
+    font-size: 24px;
+    color: #F0F0F0;
+    font-family: Graduate;
+}
+
+/* Merch/Craft Section - Translated and Colored */
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #00C4CC; /* Bright Teal Product Background */
+    border: 2px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 1474px;
+    height: 382px;
+}
+
+.craft-item-image-1 { 
+    width: 334px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.ksit-tuulik-1-parent { /* Hand-crafted Windmill / Merch Items Container */
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 4500px;
+    left: 223px;
+    width: 1474px;
+    height: 382px;
+}
+
+/* Separator Lines */
+.desktop-3-child7 {
+    position: absolute;
+    top: 1319px;
+    left: 120px;
+    background-color: #0077FF; /* Electric Blue Line */
+    width: 4px;
+    height: 184px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+.desktop-3-child8 {
+    position: absolute;
+    top: 2459px;
+    left: 693px;
+    background-color: #0077FF; /* Electric Blue Line */
+    width: 4px;
+    height: 469px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+/* Schedule Buttons - Translated and Colored */
+.broneeri-frame { /* Book Frame */
+    position: absolute;
+    top: 4104px;
+    left: 1123px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #F0F0F0; /* Light button background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 104px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.frame-div { /* Book Frame */
+    position: absolute;
+    top: 4250px;
+    left: 1123px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #F0F0F0; /* Light button background */
+    border: 1px solid #0077FF; /* Electric Blue Border */
+    box-sizing: border-box;
+    width: 104px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.history-image-2 { 
+    position: absolute;
+    top: 1240px;
+    left: 1253px;
+    border-radius: 10px 0px 0px 0px;
+    width: 546.7px;
+    height: 410px;
+    object-fit: cover;
+}
+
+.loe-rohkem-container { /* Read More Container */
+    position: absolute;
+    top: 1802px;
+    left: 120px;
+    border-radius: 10px;
+    background-color: #0077FF; /* Electric Blue Button */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #F0F0F0;
+    border: 1px solid #1A1A1A;
+    cursor: pointer;
+}
+
+.site-history-intro-container { 
+    position: absolute;
+    top: 1335px;
+    left: 120px;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    line-height: 176.57%;
+    display: inline-block;
+    width: 840px;
+    height: 427px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desktop-3 {
+    width: 100%;
+    position: relative;
+    background-color: #F0F0F0; /* Light Gray Background */
+    height: 5400px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #1A1A1A;
+    font-family: Merriweather;
+}
